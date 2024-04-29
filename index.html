@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ride On Wheels</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<link rel="icon" href="favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+  <!--to edit-->
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Antic+Slab&family=Anton&family=Cairo&family=Cinzel&family=Comfortaa:wght@300&family=Domine:wght@600&family=Libre+Baskerville:wght@700&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Quintessential&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+
+  <!-- Stylesheets -->
+
+  <link rel="icon" href="images/favicon.ico">
+
+
+  <!-- fonts awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all/js"></script>
+   <!-- botstraps -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!--to edit-->
+<style>
+
+
+/*_____________title bar(first container)____________*/
+
+body{
+
+  margin: 0;
+}
+
+
+hr{
+  width: 16%;
+  color: #EAF6F6;
+  border: dotted;
+  border-width: 5px;
+  border-bottom: none;
+  margin: 40px auto 40px;
+}
+
+#title{
+
+  position: sticky;
+}
+
+.navbarSupportedContent{
+  color: blue;
+}
+
+
+.navbar-brand{
+
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+}
+
+
+.nav-item{
+
+  font-size: 1.2rem;
+  font-family: 'Antic Slab', serif;
+}
+
+.navbar{
+
+  padding: 30px 10px 20px;
+  background-color: #35858B;
+}
+
+
+
+/*_____________title bar(first container)____________*/
+
+/*________________________________________Second Container_________________________________________________________________*/
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #1DB9C3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  padding-top: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F7F6F2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #E8F6EF}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #69DADB;
+}
+
+
+/*Dropdown button*/
+
+
+
+h1{
+  font-family: 'Anton', sans-serif;
+  padding: 50px 30px 20px;;
+  font-size: 4rem;
+}
+
+
+
+.info{
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5rem;
+  padding: 10px 30px 40px;
+}
+
+.req{
+  font-family: 'Acme', sans-serif;
+  padding: 50px 10px 40px;
+  font-size: 2rem;
+}
+
+
+.row{
+
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-content: space-around;
+  align-content: space-between;
+  text-align: center;
+  padding: 20px 0px 20px;;
+}
+
+
+.image1{
+  height: 600px;
+  width: 600px;
+}
+
+
+@media(max-width: 1028px){
+  .image1{
+    height: 300px;
+    width: 300px;
+    margin-top: 34%;
+  }
+}
+
+
+
+/*________________________________________Second Container_________________________________________________________________*/
+
+
+/*________________________________________Third Container(Covid Rules)_____________________________________________________*/
+
+
+.safety{
+  padding-right: 20px;
+  height: 80px;
+  width: 80px;
+}
+.p2p{
+  font-family: 'Quintessential', cursive;
+  padding-top: 30px;
+  width: 90%;
+
+}
+
+
+
+.icond{
+background-color: #CEE5D0;
+padding: 30px;
+}
+
+
+/*________________________________________Third Container(Covid Rules)_____________________________________________________*/
+
+
+
+
+
+/*__________________________________________Fourth Container(Vehicle mode)__________________________________________________________________________*/
+
+
+#pricing{
+  padding:100px;
+  text-align: center;
+  background-color:  #9AD0EC;
+}
+.pricing-colomn{
+  padding: 3%;
+}
+@media (max-width:1028px) {
+
+#title{
+  text-align: center;
+}
+  .titleimg{
+    position: static;
+    transform: rotate(0);
+  }
+  #pricing{
+  padding: 100px 10px;
+  
+  }
+ 
+}
+
+/*__________________________________________Fourth Container(Vehicle mode)__________________________________________________________________________*/
+
+
+/* _____________________________________________________Fifth Container(Pro's)_________________________________ */
+
+
+#features{
+  padding: 0% 15%;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+
+}
+
+.feature-box{
+  text-align: center;
+  padding: 2%;
+}
+
+.icon{
+  color: #FFE162;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.icon:hover{
+  color: #9AD0EC;
+}
+.feature-title{
+  margin-top: 10px;
+
+}
+
+
+h3{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.p3p{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* _____________________________________________________Fifth Container(Pro's)_________________________________ */
+
+
+/* _____________________________________________________sixth Container(Slides)_________________________________ */
+
+/* testimonial section */
+#testimonials{
+  padding:7% 15%;
+  text-align: center;
+  background-color: #1A5F7A;
+  color: #fff;
+}
+.test-img{
+  width: 100%;
+
+  margin:20px;
+}
+
+.press-logo{
+  width: 13%;
+  margin: 20px 20px 50px;
+}
+.sampic{
+  border-radius: 100%;
+  width: 15%;
+  padding-top:3%;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+.sampic{
+  width: 100%;
+  margin: 20px;
+}
+
+
+
+}
+
+.social-icon{
+  margin:20px 10px;
+}
+
+
+@media(max-width: 1028px){
+  .CHENNAI{
+    height: 75px;
+    width: 125px;
+  }
+
+  .HYDERABAD{
+    height: 75px;
+    width: 125px;
+  }
+  .ico{
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.clearfix {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media(max-width: 1028px){
+  .bttn1{
+    margin-bottom: 50px;
+  }
+  figcaption{
+    font-size: 10px;
+  }
+}
+
+
+.img-container {
+
+  font-family: 'Cairo', sans-serif;
+  float: left;
+  width: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.clearfix::after {
+
+
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* _____________________________________________________sixth Container(Slides)_________________________________ */
+
+
+/* _____________________________________________________seventh Container(matter)_________________________________ */
+
+
+.A {
+  line-height: 2;
+  background-color: #C2FFF9;
+  font-size: 2vw;
+    font-family: 'Comfortaa', cursive;
+  padding: 30px 0;
+}
+
+
+.B {
+
+  font-size: 2vw;
+}
+
+
+.l1 {
+  color: #FF9292;
+}
+
+.l1:hover {
+  color: #FFA6D5;
+}
+
+
+
+/* _____________________________________________________seventh Container(matter)_________________________________ */
+
+
+
+/* footer section */
+#footer{
+    background-color: #316B83;
+  font-family: fantasy;
+
+  text-align: center;
+  padding: 1.5% 15%;
+
+}
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+        <!--title bar(first container)-->
+
+  <section id="title">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="">Ride On Wheels</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://pradeep1g.github.io/_checkTrip/">Book Now</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Quick Ride</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contct">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+            <!--title bar(first container)-->
+
+
+            <!--Second Container-->
+
+  <div class="row r1">
+
+    <div class="col-lg-6 col-md-6">
+      <h1 class="h1h">Make Your Move Easy</h1>
+      <div class="info">
+        All over the world, technological advancements are bringing smart transportation to the forefront of people's everyday lives.
+      </div>
+
+      <a class="req"><b>Come On... Join Us &nbsp<br />Let's Go Ride On Wheels</b></a>
+      <br />
+      <div class="dropdown">
+      <button class="dropbtn">Connect With Us</button>
+      <div class="dropdown-content">
+        <a href="https://pradeep1g.github.io/_login/">Login</a>
+        <a href="https://pradeep1g.github.io/_register/">Register</a>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="col-lg-6 col-md-6">
+      <img class="image1" src="travel2-P.png" alt="">
+    </div>
+  </div>
+
+               <!--Second Container-->
+
+
+  <hr />
+
+               <!--Third Container(Covid Rules)-->
+
+
+  <div class="row">
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid1.png" alt="">
+      <p class="p2p">
+        All our staff are fully vaccinated
+      </p>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid2.png" alt="">
+      <p class="p2p">
+        Only vaccinated persons are allowed
+      </p>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid3.png" alt="">
+      <p class="p2p">
+        Plese maitian social distaince in the crowd
+      </p>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid4.png" alt="">
+      <p class="p2p">
+        Wearing mask is permanent from now
+      </p>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid5.png" alt="">
+      <p class="p2p">
+        Use sanitisers and handwashes thoroughly
+      </p>
+    </div>
+
+    <div class="col-lg-2 col-sm-6 col-md-4 icond">
+      <img class="safety" src="covid6.png" alt="">
+      <p class="p2p">Helping hands are never forgettable</p>
+    </div>
+
+  </div>
+
+                     <!--Third Container(Covid Rules)-->
+
+
+  <hr />
+
+
+
+                         <!--Fouth Container(vehicle mode)-->
+
+
+                           <section id="pricing">
+                             <h2 class="section-heading">Get a Ride to anytime to anywhere</h2>
+                             <p>Simple and affordable price </p>
+                             <div class="row">
+                               <div class="col-lg-4 col-md-6">
+                                 <div class="card-deck">
+                                   <div class="card">
+                                     <img class="card-img-top" src="https://images.unsplash.com/flagged/photo-1553505192-acca7d4509be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1790&q=80" alt="Card image cap">
+                                     <div class="card-block">
+                                       <h4 class="card-title">Best Cars</h4>
+                                       <p class="card-text">
+                                    The perfect way to get through your everyday travel needs. City taxis are available 24/7 and you can book and travel in an instant.</p>
+                                       <a href="https://pradeep1g.github.io/_checkTrip/" class="btn btn-primary">Start Booking</a>
+
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                               <div class="col-lg-4 col-md-6">
+                                 <div class="card ">
+                                   <img class="card-img-top" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmljeWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                                   <div class="card-block">
+                                     <h4 class="card-title">Smart Cycles</h4>
+                                     <p class="card-text">
+                                    Choose from a wide range of hand-picked models and book for your dates.Pick Up from our pick up location or get the cycles delivered.</p>
+                                
+                                     <a href="#" class="btn btn-primary">Start Booking</a>
+
+
+                                   </div>
+                                 </div>
+
+                               </div>
+                               <div class="col-lg-4 col-md-6">
+                                 <div class="card ">
+                                   <img class="card-img-top" src="https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                                   <div class="card-block">
+                                     <h4 class="card-title">Smart Bikes</h4>
+                                     <p class="card-text">
+                                    Road trips would not have been exciting if there were no Rentrip bike rental company. One of the leading motorbike rental service providers in India.
+                                   </p>
+                                     <a href="#" class="btn btn-primary">Start Booking</a>
+
+
+                                   </div>
+                                 </div>
+
+                               </div>
+
+                             </div>
+                           </section>
+
+
+
+                          <!--Fouth Container(vehicle mode)-->
+
+
+
+<hr />
+
+
+
+
+                        <!--Fifth Container(Pro's)-->
+
+
+
+                          <section id="features">
+                          <div class="row">
+                            <div class="feature-box col-lg-4">
+                              <i class=" icon fas fa-hourglass-start fa-4x"></i><br><br>
+                              <h3 class="feature-title">Fast</h3>
+                              <p class="p3p">It's imperative that our cab driver operates a service that is both honest and punctual.</p>
+                            </div>
+                            <div class="feature-box col-lg-4">
+                              <i class="icon fas fa-first-aid fa-4x"></i><br><br>
+                              <h3 class="feature-title">Safety</h3>
+                              <p class="p3p">All our staff are vaccinated and all our cars are always sanitised.</p>
+                            </div>
+                            <div class="feature-box col-lg-4">
+                              <i class="icon fas fa-shield-check fa-4x"></i><br><br>
+                              <h3 class="feature-title">Secure.</h3>
+                              <p class="p3p">Drivers should be knowledgeable & professional.</p>
+                            </div>
+
+                          </div>
+
+                          </section>
+
+
+
+                        <!--Fifth Container(Pro's)-->
+
+
+
+
+<hr />
+
+
+                        <!--Sixth Container (Slides)--->
+
+
+
+
+                          <section id="testimonials">
+                             <h2 class="advant">Advanced Trips</h2>
+                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                           <ol class="carousel-indicators">
+                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                           </ol>
+                           <div class="carousel-inner">
+                             <div class="carousel-item active">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://img.onmanorama.com/content/dam/mm/en/travel/outside-kerala/images/2021/8/9/chennai.jpg" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>CHENNAI</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a  href="https://pradeep1g.github.io/_tour1/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://images.unsplash.com/photo-1562979314-bee7453e911c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>MUMBAI</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour2/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://media.gettyimages.com/photos/shopping-on-brigade-road-picture-id521958486?k=20&m=521958486&s=612x612&w=0&h=ExUfNstsht9xMKXkh67iQKxPSKOyOfJo3fUo3a-4krQ=" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>BANGALORE</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour3/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://media.gettyimages.com/photos/traffic-on-road-along-the-beach-visakhapatnam-andhra-pradesh-india-picture-id464741847?k=20&m=464741847&s=612x612&w=0&h=KqAd1VJllk37fqrX4dcvxoj7z-yiZwVb5jiCkvTjtIw=" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>VIZAG</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour4/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://media.gettyimages.com/photos/facade-of-a-high-court-building-calcutta-high-court-kolkata-west-picture-id481686341?k=20&m=481686341&s=612x612&w=0&h=Rbc6o7fsuxMG-wWUDOSOnOMcWXjXC55gbeVnrZcnN30=" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>KOLKATA</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour5/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://media.gettyimages.com/photos/india-gate-new-delhi-picture-id481632685?k=20&m=481632685&s=612x612&w=0&h=HLn7PaQ-ct1DDRnrd_u-qRwLZ_yomkwiNEamlnX7Yvk=" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>DELHI</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour6/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://media.gettyimages.com/photos/sunset-over-the-tropical-beach-with-coconut-palm-and-boat-at-pattaya-picture-id1223949505?k=20&m=1223949505&s=612x612&w=0&h=4ColYVunUgvZiopcCGpZncATr2qeUMgt9A2GQzsEhlc=" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>GOA</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour7/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+                             <div class="carousel-item">
+                               <div class="trip1-1">
+                                 <div class="clearfix">
+                               <div class="img-container">
+                               <figure>
+                               <img class="HYDERABAD" src="https://www.holidify.com/images/bgImages/HYDERABAD.jpg" alt="Italy" height="150px" width="250px">
+                               <figcaption>HYDERABAD</figcaption>
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="ico" src="arrowR.png" alt="Forest" >
+                               </figure>
+                               </div>
+                               <div class="img-container">
+                               <figure>
+                                 <img class="CHENNAI" src="https://www.tripsavvy.com/thmb/3uRtizyHdHLxxZEcknIyn2foERA=/2121x1414/filters:fill(auto,1)/palace-of-winds-in-jaipur--india-1079569482-9e23894f8fcd49d9ac71c18100fb6826.jpg" alt="Mountains" height="150px" width="250px">
+                                 <figcaption>JAIPUR</figcaption>
+                               </figure>
+                               </div>
+                               </div>
+                               </div>
+                               <a href="https://pradeep1g.github.io/_tour8/"> <button type="button"  class="btn btn-dark btn-lg download-button bttn1"> Start Booking</button></a>
+                             </div>
+
+                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Previous</span>
+                           </a>
+                           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Next</span>
+                           </a>
+                         </div>
+
+
+                           </section>
+
+
+                           <!--Sixth Container (Slides)--->
+
+<hr />
+
+
+                           <!--Seventh Container (Slides)--->
+
+
+                           <div class="A">
+                             <div class="A1">
+                               <div class="A11">
+                                 <ul>
+                                   <li>“Live with no excuses and travel with no regrets”</li>
+                                   <li>“We travel not to escape life but for life not to escape us.”</li>
+                                   <li>“If life were predictable it would cease to be life, and be without flavor ” </li>
+                                   <li>“The greatest glory in living lies not in never falling, but in rising every time we fall. ”</li>
+                                 </ul>
+                               </div>
+                             </div>
+                           </div>
+
+                           <div class="B">
+
+                             <div class="row">
+                               <div class="col-lg-4">
+                                 <span class="l1"><i class="fal fa-bicycle fa-3x"></i></span>
+                                 <p class="p2p">
+                                   Life is like riding a bicycle – in order to keep your balance, you must keep moving.
+                                 </p>
+                               </div>
+
+                               <div class="col-lg-4">
+                                 <span class="l1"><i class="fas fa-car-side fa-3x"></i></span>
+                                 <p class=p2p>
+                                   Patience is something you admire in the driver behind you and scorn in the one ahead.
+                                 </p>
+                               </div>
+
+                               <div class="col-lg-4">
+                                 <span class="l1"><i class="fas fa-motorcycle fa-3x"></i></span>
+                                 <p class=p2p>
+                                   It's a never ending battle of making your cars better and also trying to be better yourself.
+                                 </p>
+                               </div>
+
+                             </div>
+
+                           </div>
+
+
+                              <!--Seventh Container (Slides)--->
+
+
+
+                           <footer id="footer">
+                             <a href="https://www.facebook.com/sanjeevsai.sasank"><i class="social-icon fab fa-facebook"></i></a>&nbsp&nbsp&nbsp
+                             <a href="https://instagram.com/its._.sanjeev?utm_medium=copy_link"><i class="social-icon fab fa-instagram"></i></a>&nbsp&nbsp&nbsp
+                             <a href="https://twitter.com/saisasank09"><i class="social-icon fab fa-twitter"></i></a>&nbsp&nbsp&nbsp
+                             <a href="https://github.com/Pradeep1G"><i class="social-icon fab fa-github"> </i></a>&nbsp&nbsp&nbsp
+                             <a  class="contct"href="https://web.whatsapp.com/7416320648"><i class="fa fa-phone" aria-hidden="true"></i></a>
+
+
+                             <p>©&nbsp 2022 Copyright Ride On Wheels</p>
+                             <p><b>Coders Clan</b></p>
+
+                           </footer>
+
+
+
+</body>
+
+</html>
